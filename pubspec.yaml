@@ -1,8 +1,8 @@
 name: meta_logger
 description: "A simple logging package for Flutter applications that supports persistent logging with size limits."
 version: 0.1.0
-homepage: "https://github.com/Riyadh-Herizi/r-logger"
-repository: "https://github.com/Riyadh-Herizi/r-logger"
+homepage: "https://github.com/Riyadh-Herizi/mc-logger"
+repository: "https://github.com/Riyadh-Herizi/mc-logger"
 environment:
   sdk: ^3.5.2
   flutter: ">=1.17.0"
