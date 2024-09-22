@@ -1,10 +1,10 @@
-library r_logger;
+library rlogger;
 
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
-import 'package:r_logger/logger_config.dart';
-import 'package:r_logger/persist_logs.dart';
+import 'package:rlogger/logger_config.dart';
+import 'package:rlogger/persist_logs.dart';
 
 // Initialize PersistLogs singleton
 PersistLogs persistLogs = PersistLogs();

@@ -15,7 +15,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  r_logger: ^1.0.0
+  rlogger: ^1.0.0
 ```
 ## Usage
 
@@ -25,7 +25,7 @@ Before using R Logger, initialize it with optional custom configuration in your 
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:r_logger/r_logger.dart';
+import 'package:rlogger/rlogger.dart';
 
 void main() {
   // Initialize with custom config (optional)

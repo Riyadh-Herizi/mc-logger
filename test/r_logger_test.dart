@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:r_logger/logger_config.dart';
-import 'package:r_logger/r_logger.dart';
+import 'package:rlogger/logger_config.dart';
 import 'package:hive_test/hive_test.dart';
+import 'package:rlogger/r_logger.dart';
 
 void main() {
   // Ensure Flutter bindings are initialized

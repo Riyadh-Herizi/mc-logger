@@ -1,8 +1,8 @@
-name: r_logger
+name: rlogger
 description: "A simple logging package for Flutter applications that supports persistent logging with size limits."
-version: 0.3.0
-homepage: "https://github.com/Riyadh-Herizi/r_logger"
-repository: "https://github.com/Riyadh-Herizi/r_logger"
+version: 0.1.0
+homepage: "https://github.com/Riyadh-Herizi/r-logger"
+repository: "https://github.com/Riyadh-Herizi/r-logger"
 environment:
   sdk: ^3.5.2
   flutter: ">=1.17.0"
