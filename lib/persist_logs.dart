@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:rlogger/logger_config.dart';
+import 'package:meta_logger/logger_config.dart';
 import 'package:uuid/uuid.dart';
 
 class PersistLogs {

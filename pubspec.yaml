@@ -1,4 +1,4 @@
-name: rlogger
+name: meta_logger
 description: "A simple logging package for Flutter applications that supports persistent logging with size limits."
 version: 0.1.0
 homepage: "https://github.com/Riyadh-Herizi/r-logger"

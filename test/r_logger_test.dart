@@ -1,14 +1,14 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rlogger/logger_config.dart';
+import 'package:meta_logger/logger_config.dart';
 import 'package:hive_test/hive_test.dart';
-import 'package:rlogger/r_logger.dart';
+import 'package:meta_logger/r_logger.dart';
 
 void main() {
   // Ensure Flutter bindings are initialized
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() async {
-    await RLogger.init(
+    await MetaLogger.init(
         customConfig: LoggerConfig(isTesting: true, logsMaxSize: 0.000001));
     // Initialize in-memory Hive storage for testing
     await setUpTestHive();
@@ -21,18 +21,18 @@ void main() {
   test('Logger should log info message', () async {
     // Initialize logger with default config
 
-    await RLogger.i('This is an info log message');
+    await MetaLogger.i('This is an info log message');
 
-    var logs = await RLogger.getLogs();
+    var logs = await MetaLogger.getLogs();
 
     expect(logs.isNotEmpty, true);
     expect(logs[0].contains('info'), true);
   });
 
   test('Logger should log error message', () async {
-    await RLogger.e('This is an error log message');
+    await MetaLogger.e('This is an error log message');
 
-    var logs = await RLogger.getLogs();
+    var logs = await MetaLogger.getLogs();
 
     // Verify that the log was saved and is of type error
     expect(logs.isNotEmpty, true);
@@ -44,11 +44,11 @@ void main() {
 
     // Log multiple messages to exceed the limit
     for (int i = 0; i < 200; i++) {
-      await RLogger.i('This is log message $i');
+      await MetaLogger.i('This is log message $i');
     }
 
     // Ensure logs were deleted due to size limit
-    var logs = await RLogger.getLogs();
+    var logs = await MetaLogger.getLogs();
 
     expect(logs.length, 1); // Should be empty after exceeding the limit
   });

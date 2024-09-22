@@ -1,15 +1,15 @@
-library rlogger;
+library meta_logger;
 
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
-import 'package:rlogger/logger_config.dart';
-import 'package:rlogger/persist_logs.dart';
+import 'package:meta_logger/logger_config.dart';
+import 'package:meta_logger/persist_logs.dart';
 
 // Initialize PersistLogs singleton
 PersistLogs persistLogs = PersistLogs();
 
-class RLogger {
+class MetaLogger {
   static LoggerConfig config = LoggerConfig();
   static String propagationStopCode = "\x1B[0m";
   // New getLogs method

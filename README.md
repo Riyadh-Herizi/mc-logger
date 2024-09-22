@@ -1,4 +1,4 @@
-# R Logger
+# MetaLogger
 
 A simple logging package for Flutter applications that supports persistent logging with size limits.
 
@@ -15,21 +15,21 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  rlogger: ^1.0.0
+  meta_logger: ^0.1.0
 ```
 ## Usage
 
 ### Initialization
 
-Before using R Logger, initialize it with optional custom configuration in your `main.dart`:
+Before using  MetaLogger, initialize it with optional custom configuration in your `main.dart`:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:rlogger/rlogger.dart';
+import 'package:meta_logger/meta_logger.dart';
 
 void main() {
   // Initialize with custom config (optional)
-  RLogger.init(customConfig: LoggerConfig(logsMaxSize: 5)); 
+  MetaLogger.init(customConfig: LoggerConfig(logsMaxSize: 5)); 
   runApp(MyApp());
 }
 
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             onPressed: () {
-              RLogger.i('This is an info log message');
+              MetaLogger.i('This is an info log message');
             },
             child: Text('Log Info Message'),
           ),
@@ -58,19 +58,19 @@ R Logger supports logging at various severity levels. Use the following methods 
 
 - **Info Logs**: Use for general informational messages.
   ```dart
-  RLogger.i('This is an info log message');
+  MetaLogger.i('This is an info log message');
   ```
   - **Error Logs**: Use for error messages that indicate something went wrong.
   ```dart
-  RLogger.e('This is an error log message');
+  MetaLogger.e('This is an error log message');
   ```
   - **Warning Logs**: Use for warning messages that indicate potential issues.
   ```dart
-  RLogger.w('This is a warning log message');
+  MetaLogger.w('This is a warning log message');
   ```
   - **Debug Logs**: Use for debug messages during development.
   ```dart
-  RLogger.d('This is a debug log message');
+  MetaLogger.d('This is a debug log message');
   ```
 
 ## LoggerConfig
