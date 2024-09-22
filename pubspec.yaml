@@ -1,0 +1,21 @@
+name: r_logger
+description: "A new Flutter package project."
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.15
+  hive: ^2.2.3
+  uuid: ^4.5.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  hive_test: ^1.0.1
